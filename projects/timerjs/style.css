@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  text-shadow: 0 0 10px #006b8b;
+  font-family: "Roboto", Sans-Serif;
+  background-color: rgb(3, 17, 31);
+}
+form {
+  height: 120px;
+  padding-top: 20px;
+  /*centralizar*/
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+
+}
+.minutes, .seconds, .hours{
+  text-align: center;
+  flex-direction: column ;
+  width: 100%;
+  margin: 2px; /* ta errado ... a margem ta sendo add no item de cima tb*/
+}
+
+.select-box1{
+  display: flex;
+  min-width: 350px;
+  max-width: 350px;
+  font-size: 15px;
+}
+.select-box2{
+  min-width: 350px;
+  max-width: 350px;
+  display: flex;
+  font-size: 15px;
+}
+.options-container{
+  background: #345;
+  color: white;
+  max-height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all  0.4s;
+  border-radius: 8px;
+  overflow: hidden;
+  
+  order: 1;
+}
+.selected {
+  font-size: 120%;
+  width: 100%;
+  background: #2f3640;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  color: #f5f6fa;
+  position: relative;
+  
+  order: 0;
+}
+
+.selected::after{
+  content: "";
+  background: url("img/arrow-down.svg"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+  position: absolute;
+  height: 100%;
+  width: 32px;
+  right: 0px;
+  top: 3px;
+  transition: all 0.4s;
+}
+
+.options-container.active{ /* espaçamento entre classes de tag parent*/
+  max-height: 240px;
+  opacity: 1;
+  overflow-y: scroll;/*o efeito de rolar a pagina WOW! */
+}
+.selected.rotate::after {
+  transform: rotateX(180deg);
+  top: -1px;
+}
+   
+.options-container::-webkit-scrollbar{/*scroll background*/
+  width: 8px;
+  background: #3e629c;
+  border-radius: 0 8px 8px 0;
+}
+.options-container::-webkit-scrollbar-thumb {/*scroll parte rolavel*/
+  background: #81a0d4;
+  border-radius: 0 8px 8px 0;
+}
+.option, .selected{
+  padding: 08px 0px 0px 0px;
+  height: 35px;
+  cursor: pointer;
+}
+.option:hover {
+  background: #475f7c;
+}
+label{
+  cursor: pointer;
+}
+.option .radio {
+  display: none;/*esconde as bolinhas de marcaçao do radio*/
+}
+.option{
+  border: 1px solid rgba(20, 19, 48, 0.253);
+}
+/**********************************/
+
+button{
+  outline: none;
+  transition: all 2s; 
+  text-shadow: 0 0 10px #006b8b;
+  width: 159px;
+  border-radius: 10px;
+  margin: 2px;
+  background: #8259f3b9;
+  color: white;
+  font-size: 25px;
+  padding: 8px 0px 8px 0px;
+  cursor: pointer;
+}
+#execution-box{
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 0px;
+  z-index: -1;
+  /*position: absolute;*/
+  text-align: center;
+}
+.stop-btn{
+  display: none;
+  border-radius: 10px;
+  background: #30143bb9;
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
+}
+audio{
+  display: none;
+}
+.display-time{
+  color: rgb(223, 219, 219);
+  margin-top: 80px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 50px;
+}
+.pause-btn{ 
+  display: none;
+}
+.continue-btn{
+  display: none;
+}
+.restart-btn{
+  display: none;
+}
+img{
+  filter: drop-shadow(0px 0px 6px #ce5efa);
+  margin-bottom: 0;
+  position: absolute;
+}

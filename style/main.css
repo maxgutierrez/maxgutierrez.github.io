@@ -7,7 +7,11 @@
 }
 body{
 	font-family: sans-serif;
+	background: rgb(24,25,26);
+	color: #ffff;
+
 }
+
 nav{
 	background: rgb(66, 19, 128);
 	color: white;
@@ -104,4 +108,44 @@ a.active, a:hover{
 .iniciais{
 	filter: drop-shadow(0px 00px 5px #ba8bf3);
 
+}
+#content{
+	padding: 20px;
+	background: rgb(36,37,38);
+	margin: 0 auto;
+	border-radius: 5px;
+	margin-top: 50px;
+	text-align: center;
+	max-width: 300px;
+}
+#content a button {
+	outline: none;
+	border: none;
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:10px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+#content a button:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+#content a button:active {
+	position:relative;
+	top:1px;
+}
+.img-profile {
+	width: 160px;
+	overflow: hidden;
+	object-fit: cover;
+	border-radius: 100%;
 }
