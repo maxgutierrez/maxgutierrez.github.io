@@ -152,5 +152,7 @@ a.active, a:hover{
 	border-radius: 100%;
 }
 .simbols {
-	color: rgb(243, 0, 0);
+	transition: 1s, transition, repeat;
+	opacity: 30%;
+	color: rgb(255, 0, 0);
 }
