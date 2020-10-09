@@ -152,7 +152,10 @@ a.active, a:hover{
 	border-radius: 100%;
 }
 .simbols {
-	opacity: 10%;
-	color: rgb(255, 0, 0);
+	font-size: 72px;
+	background: -webkit-linear-gradient(rgb(238, 238, 238), #333);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	font-family: serif;
+	font-size: 30px;
 }
