@@ -152,6 +152,7 @@ a.active, a:hover{
 	border-radius: 100%;
 }
 .simbols {
-	opacity: 30%;
+	opacity: 20%;
 	color: rgb(255, 0, 0);
+	font-family: serif;
 }
