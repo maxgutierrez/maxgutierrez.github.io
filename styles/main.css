@@ -9,6 +9,14 @@ body{
 	font-family: sans-serif;
 	background: rgb(24,25,26);
 	color: #ffff;
+}
+.bg {
+	position: relative;
+	z-index: -100;
+	background-image: url("../img/xadrez.jpg");
+	background-attachment: fixed;
+	/* background-repeat: no-repeat; */
+	/* opacity: 0.0; */
 
 }
 p {
