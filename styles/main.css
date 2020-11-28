@@ -177,6 +177,11 @@ a.active, a:hover{
 	-webkit-text-fill-color: transparent;
 	/* font-size: 30px; */
 }
+hr {
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 .principal-phrase {
 	background: -webkit-linear-gradient(rgb(255, 251, 0), #333);
 	-webkit-background-clip: text;
