@@ -11,6 +11,19 @@ body{
 	color: #ffff;
 
 }
+p {
+	border-bottom: 1px solid rgb(78, 77, 77);
+	border-radius: 10px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+h3 {
+	margin-bottom: 30px;
+	border-bottom: 1px solid gray;
+	padding: 10px;
+
+
+}
 
 nav{
 	background: rgb(66, 19, 128);
@@ -152,12 +165,25 @@ a.active, a:hover{
 	border-radius: 100%;
 }
 .simbols {
-	font-size: 72px;
 	background: -webkit-linear-gradient(rgb(238, 238, 238), #333);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-family: serif;
 	font-size: 30px;
+}
+.simbols-2 {
+	background: -webkit-linear-gradient(rgb(238, 238, 238), #333);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: serif;
+	/* font-size: 30px; */
+}
+.principal-phrase {
+	background: -webkit-linear-gradient(rgb(255, 251, 0), #333);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: serif;
+	/* font-size: 30px; */
 }
 .btn2 {
 	box-shadow:inset 0px 0px 15px 3px #23395e;
