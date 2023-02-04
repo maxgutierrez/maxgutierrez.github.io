@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Max Gutierrez - site</title>
-	<link rel="shortcut icon" href="/img/logo.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/img/logo.ico" type="image/x-icon" >
 	<link rel="stylesheet" href="/styles/main.css">
 	<!--isso importa o icone de 3 riscos -->
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <meta name="theme-color" content="black">
+   <meta name="theme-color" content="black">
 
 
 </head>
@@ -23,12 +23,12 @@
 		</label>
 
 		<a href="index.html">
-			<label class="logo-container">
+			<div class="logo-container">
 				<img class="img-logo" src="/img/logo.png">
 
 				<span class="nome-logo"></span><span class="iniciais">M</span>ax </span>
 				<span class="iniciais">G</span><span class="nome-logo"></span>utierrez</span>
-			</label>
+			</div>
 
 		</a>
 
@@ -44,7 +44,7 @@
 
 	<section>
 
-		<div id="content">
+		<div class="content">
 			<h2>Área do administrador</h2> <br>
 			<input id="user" type="text" placeholder="Usuário"> <br> <br>
 			<input id="password" type="text" placeholder="Senha"> <br> <br>
@@ -57,6 +57,9 @@
 
 
 	</section>
+	<button id="topBtn" title="Voltar ao topo" onclick="topFunction()">↑</button>
+
 <script src="/scripts/adm.js"></script>
+<script src="scripts/main.js"></script>
 </body>
 </html>
